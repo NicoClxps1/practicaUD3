@@ -9,11 +9,13 @@ class Venta extends Model
 {
     use HasFactory;
 
+    /**
+     * Los atributos que se pueden asignar masivamente.
+     */
     protected $fillable = [
-        'cliente_id',
-        'moto_id',
-        'total',
-        'fecha_venta',
+        'cliente_id',  // Llave foránea que relaciona con el cliente
+        'total',       // Total de la venta
+        'fecha_venta', // Fecha de la venta
     ];
 
     /**
@@ -26,10 +28,11 @@ class Venta extends Model
     }
 
     /**
-     * Relación N..N con Moto (a través de una tabla intermedia).
+     * Relación N..N con Moto (a través de una tabla intermedia `venta_moto`).
      */
     public function motos()
     {
-        return $this->belongsToMany(Moto::class, 'venta_moto');
+        return $this->belongsToMany(Moto::class, 'venta_moto')
+            ->withTimestamps(); // Incluye created_at y updated_at en la tabla pivote
     }
 }
