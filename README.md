@@ -39,9 +39,7 @@ Con este sistema, MotoCenter podrá mejorar sus procesos internos, optimizar rec
 
 --------------------------------------------------------------------------------------------------
 # **Modelo E-R**
-![motos drawio](https://github.com/user-attachments/assets/715f8482-6fa1-41c7-a03d-ce45ca0a1a16)
-
-
+![image](https://github.com/user-attachments/assets/10936b45-c010-43c2-9de2-2327d16ffa02)
 --------------------------------------------------------------------------------------------------
 # **Way of Working (WoW)**
 
